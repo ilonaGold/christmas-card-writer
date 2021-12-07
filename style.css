@@ -1,0 +1,91 @@
+:root {
+  --wine-red: #c7375f;
+  --bright-red: #d42d2f;
+  --dark-green: #344d2f;
+  --light-green: #77a047;
+  --gold: #fac57d;
+  --snow: #f0f4f7;
+}
+
+* {
+  transition: 0.4s ease;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--wine-red);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.card {
+  width: 315px;
+  height: 315px;
+  border-radius: 5px;
+  background: var(--snow) url("christmas-card.jpg") no-repeat;
+  background-position: left;
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 0.3em;
+  position: relative;
+  margin-bottom: 0.2em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+p {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 70%;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  transform: translate(-50%, -50%);
+}
+
+.input-container > * {
+  margin-bottom: 0.3em;
+}
+
+input {
+  padding: 0.3em;
+}
+
+#toName {
+  margin-left: 6em;
+}
+
+#fromName {
+  margin-left: 4.5em;
+}
+
+#message {
+  width: 96%;
+}
+
+button {
+  border: none;
+  background-color: var(--gold);
+  font-weight: 700;
+  color: var(--dark-green);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+button:hover,
+button:focus {
+  background: var(--light-green);
+  color: var(--snow);
+  cursor: pointer;
+}
