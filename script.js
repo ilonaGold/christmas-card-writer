@@ -35,17 +35,11 @@ const writeCard = () => {
         greetingDisplay.textContent = `${greeting}`;
     } 
     
-    generateColor();
-    document.body.style.backgroundImage = "url(http://www.animationsoftware7.com/img/agifs/snow03.gif)";
+    document.body.style.backgroundImage = "url('http://www.animationsoftware7.com/img/agifs/snow03.gif')";
         
     toName.value = "";
     fromName.value = "";
     message.value = "";
 }
-
-const generateColor = () => {
-    const randomColor = Math.random().toString(16).substring(2, 8);
-    document.body.style.backgroundColor = "#" + randomColor;
-};
 
 btn.addEventListener("click", writeCard);

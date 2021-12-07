@@ -5,6 +5,7 @@
   --light-green: #77a047;
   --gold: #fac57d;
   --snow: #f0f4f7;
+  --light-blue: #5bb5cf;
 }
 
 * {
@@ -19,7 +20,7 @@ body {
 }
 
 body {
-  background: var(--wine-red);
+  background: var(--light-blue);
   height: 100vh;
   display: flex;
   flex-direction: column;
